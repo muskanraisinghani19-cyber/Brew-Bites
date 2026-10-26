@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew & Bites | Order</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Brew & Bites</h1>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="specials.html">Specials</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="register.html">Register</a>
+        <a href="order.html">Order</a>
+    </nav>
+</header>
+
+<main>
+
+    <section class="page-banner">
+        <p class="small-title">YOUR FAVOURITES, JUST A FEW CLICKS AWAY</p>
+        <h2>Place Your Order</h2>
+        <p>Choose an item and tell us how many you would like.</p>
+    </section>
+
+    <section class="section form-section">
+
+        <div class="form-card">
+            <h2>Order Form</h2>
+
+            <form id="orderForm">
+
+                <label for="customer">Your Name</label>
+                <input type="text" id="customer" placeholder="Enter your name" required>
+
+                <label for="food">Select Food Item</label>
+
+                <select id="food" required>
+                    <option value="">-- Choose an item --</option>
+                    <option value="Cappuccino">Cappuccino - ₹120</option>
+                    <option value="Latte">Latte - ₹130</option>
+                    <option value="Cold Coffee">Cold Coffee - ₹140</option>
+                    <option value="Chocolate Shake">Chocolate Shake - ₹150</option>
+                    <option value="Veg Sandwich">Veg Sandwich - ₹100</option>
+                    <option value="French Fries">French Fries - ₹120</option>
+                    <option value="White Sauce Pasta">White Sauce Pasta - ₹220</option>
+                    <option value="Chocolate Brownie">Chocolate Brownie - ₹160</option>
+                </select>
+
+                <label for="quantity">Quantity</label>
+                <input type="number" id="quantity" required>
+
+                <label for="orderemail">Email</label>
+                <input type="email" id="orderemail" placeholder="Enter your email" required>
+
+                <label for="instructions">Special Instructions</label>
+                <textarea id="instructions" rows="3" placeholder="Any extra requests? (optional)"></textarea>
+
+                <button type="button" class="submit-button" onclick="alert('Order Placed Successfully!');
+                window.location.href='home.html'" >Place Order</button>
+
+            </form>
+
+        
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>©️ 2026 Brew & Bites. All rights reserved.</p>
+</footer>
+
+
+
+</body>
+</html>
